@@ -17,8 +17,7 @@ function App() {
           -Tornado clipart from <em>OpenClipart-Vectors</em> on <a href='https://pixabay.com' className='App-link'>Pixabay</a>-
         </p>
         <p>
-          -Weather data and icons from 
-          <a href='https://openweathermap.org' className='App-link'>openweathermap</a>-
+          -Weather data and icons from <a href='https://openweathermap.org' className='App-link'>openweathermap</a>-
         </p>
         <br/>
         <p>
