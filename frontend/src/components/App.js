@@ -2,10 +2,38 @@ import logo from '../media/tornado.png';
 import Body from './Body';
 import '../styles/App.css';
 import { TextField } from '@mui/material';
-import { COLORS } from '../values/colors';
+// import { COLORS } from '../values/colors';
 import { useState } from 'react';
+import { styled } from '@mui/material/styles';
 
-function App() {
+// the customized text field input where the user will input a US city
+const CityInput = styled(TextField)({
+  '& input': {
+    color: 'white'
+  },
+  '& label': {
+    color: 'white'
+  },
+  '& label.Mui-focused': {
+    color: '#E0E3E7',
+  },
+  '& .MuiInput-underline:after': {
+    borderBottomColor: '#B2BAC2',
+  },
+  '& .MuiOutlinedInput-root': {
+    '& fieldset': {
+      borderColor: '#E0E3E7',
+    },
+    '&:hover fieldset': {
+      borderColor: '#E0E3E7',
+    },
+    '&.Mui-focused fieldset': {
+      borderColor: '#E0E3E7',
+    },
+  },
+});
+
+export default function App() {
   const [city, setCity] = useState('Provo');
 
   return (
@@ -19,20 +47,12 @@ function App() {
           </div>
         </div>
         <div>
-          <TextField
-            id='filled-search'
-            label='Enter a US City'
-            type='search'
-            defaultValue='Provo'
-            variant='filled'
-            sx = {{
-              input: {
-                color: COLORS.secondary
-              }
-            }}
+          <CityInput
+            label='Enter a US City' 
+            id='custom-css-outlined-input'
             onKeyDown={event => {
               if (event.key === 'Enter') {
-                setCity(event.target.value);
+                setCity(event.target.value)
                 console.log(city);
               }
             }}
@@ -42,10 +62,13 @@ function App() {
       <Body />
       <footer className='App-footer'>
         <p>
-          -Tornado clipart from <em>OpenClipart-Vectors</em> on <a href='https://pixabay.com' className='App-link'>Pixabay</a>-
+          ~ Tornado clipart from
+          <em> OpenClipart-Vectors</em> on 
+          <a href='https://pixabay.com' className='App-link'> Pixabay</a> ~
         </p>
         <p>
-          -Weather data and icons from <a href='https://openweathermap.org' className='App-link'>openweathermap</a>-
+          ~ Weather data and icons from
+          <a href='https://openweathermap.org' className='App-link'> openweathermap</a> ~
         </p>
         <br/>
         <em>a project by James Belnap</em>
@@ -53,5 +76,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
