@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { styled } from '@mui/material/styles';
 
 // the customized text field input where the user will input a US city
-const CityInput = styled(TextField)({
+const CityInput = styled(TextField) ({
   '& input': {
     color: 'white'
   },
