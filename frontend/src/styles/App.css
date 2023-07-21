@@ -42,3 +42,54 @@
   color: #2f2f30;
   padding: 2vh 0 2vh 0;
 }
+
+.App-body {
+  background-color: #e1ebfa;
+  min-height: 10vh;
+  display: flex;
+  padding: 5vh 0 5vh 0;
+  gap: 3vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.currentWeather {
+  background-color: #8fb7f2;
+  width: 70vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1vh 0 1vh 0;
+}
+
+.currentWeatherIcon {
+  display: flex;
+}
+
+.currentTemp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.currentTemp * {
+  margin: 0;
+}
+
+.temperature {
+  font-size: 4em;
+}
+
+.currentWeatherBlocks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.currentWeatherInfo {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}

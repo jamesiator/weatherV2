@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../styles/Body.css';
+import '../styles/App.css';
 
 const KEY = process.env.REACT_APP_WEATHER_API_KEY;
 

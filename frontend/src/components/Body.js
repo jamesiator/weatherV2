@@ -1,6 +1,6 @@
 import React from 'react';
 // import { TextField } from '@mui/material';
-import '../styles/Body.css';
+import '../styles/App.css';
 import CurrentWeather from './CurrentWeather';
 import Forecast from './Forecast';
 
